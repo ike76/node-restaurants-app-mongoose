@@ -250,7 +250,7 @@ describe('Restaurants API resource', function() {
 
       let restaurant;
 
-      return Restaurant/
+      return Restaurant
         .findOne()
         .then(function(_restaurant) {
           restaurant = _restaurant;
