@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: qbxNtiRus93Iy5Qa/ysPzjkFcqJKu3+VR/nlCkq8ppWfUZ1BW6PkLuM/GAI6fL3H6Tne93sBnJvGL9QZxh6Fr33sHcryIkQ1H+TTFvBkzvQB0ptJR5UCBU367kM7hL1Wy9jcAhcFeEFhJCuoRakI+PAxHC/SodsOO2egB3WLaWuE876RcaLeB97vv//erBY5UYzeN4H2fe0hR6RzMCil60t/96Tq9+d/QuLXLJme0PdbrPxGruwdX6L6PH5CxKsXAj/H2F5EXpydjP11QpIxqH6oFCMMc3gFmpmVaQTt8ZmyXzTYwlOI5Dzd/+awGSi2MPRu9i984GeKj7LgDx2RD7cKFsPBvTd7FDqzRnVgJzFATmu21OgCX4xHJkrJhduhpSLTiqEcbaFCh4F1VC80ic55D7uP4rC/VIBZRPgiTeMDm0BGRuTpgeAIzZzq5yJtEAaBPfv5hRUT2zsuJSmF4MHQEoyUgEkNSNr7ENAggDsxpmLh31TlI6y4J+b0e21mCRMXPXobhVwzSLZN83QtZUq8BYDtrU0LF3G5WDpRDGOceYgtKgMbqug11Ute7vPuOeU9gGPkARWyzW7dzs5dfR8Usc4NtZarrSxd5NAJgX6mVLbdl0++Dj9bOIsHIzYEDGEtf1TKPCOyQQgLqI5IIRW56Qo2ylK37TUZk9+OVHg=
+  app: cryptic-savannah-26439
+  on:
+    repo: ike76/node-restaurants-app-mongoose
+    branch: feature/with-tests
